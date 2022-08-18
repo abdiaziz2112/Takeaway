@@ -30,7 +30,7 @@ function register(foodName,qty,price){
   let order = `<tr>   <td>${foodName.value}</td>  <td>${qty.value}</td>   <td>$${price.value}</td>  <td>$${total}</td>   </tr> `;
   
   let subTotal =  `  <tr >    <td colspan="3">Wadarta Guud</td>  <td>$${total}</td></tr>`;
-  table.innerHTML += order;
+  table.innerHTML = order;
   tfoot.innerHTML = subTotal;
 }
 
